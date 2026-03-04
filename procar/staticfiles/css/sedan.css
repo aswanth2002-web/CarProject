@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* .item img{
+    width: 400px;
+    height: 300px;
+} */
+.main-carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-carousel .list .item {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.main-carousel .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-carousel .list .item .content {
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 5px 10px #0004;
+}
+
+.main-carousel .list .item .content .price {
+  position: relative;
+  bottom: 100px;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.main-carousel .list .item .content .desc{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  bottom: 100px;
+  width: 1000px;
+}
+.main-carousel .list .item .content .cate{
+  position: relative;
+  bottom: 70px;
+}
+.main-carousel .list .item .content .title{
+  position: relative;
+  bottom: 80px;
+  font-family: "Poppins", sans-serif;
+   font-weight: bold;
+  font-size: 5em;
+  list-style: 1.3em;
+   width: max-content;
+}
+.main-carousel .list .item .content button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  /* font-family: ; */
+  font-weight: 500;
+  position: relative;
+  bottom: 80px;
+}
+.main-carousel .list .item .content button:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
+}
+/* thumbnail */
+.thumbnail {
+  position: absolute;
+  bottom: 40px;
+  left: 47%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.thumbnail .item {
+  width: 230px;
+  height: 135px;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+.thumbnail .item .content {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 10px;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: space-between;
+  width: 120px; /* adjust spacing between arrows */
+  z-index: 200;
+}
+button a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.arrow button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(22, 20, 20, 0.4);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow button:hover {
+  background-color: #eee;
+  color: #222;
+}
+
+/*  */
+.main-carousel .list .item:nth-child(1) {
+  z-index: 1;
+}
+.main-carousel .list .item:nth-child(1) .title,
+.main-carousel .list .item:nth-child(1) .price,
+.main-carousel .list .item:nth-child(1) .desc,
+.main-carousel .list .item:nth-child(1) button {
+  transform: translateY(50px);
+  filter: blur(15px);
+  opacity: 0;
+  animation: contentanime 0.5s 1s linear 1 forwards;
+}
+@keyframes contentanime {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+.main-carousel .list .item:nth-child(1) .title {
+  animation-delay: 1.2s;
+}
+.main-carousel .list .item:nth-child(1) .price {
+  animation-delay: 1.4s;
+}
+.main-carousel .list .item:nth-child(1) .desc {
+  animation-delay: 1.6s;
+}
+.main-carousel .list .item:nth-child(1) button {
+  animation-delay: 1.8s;
+}
