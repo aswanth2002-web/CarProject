@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background-color: black;
+     overflow: hidden; 
+}
+/* nav start */
+nav{
+  
+   display: flex;
+    justify-content: space-between;
+}
+nav a{
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: white;
+    
+  
+
+}
+
+.logo-nav {
+    margin-left:150px ;
+}
+.logo-nav a{
+    
+font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
+.sign-nav a{
+   
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  position: relative;
+  right: 170px;
+  margin-right: 50px;
+ 
+}
+/* nav ends */
+/* FORM START */
+.form-con{
+    background-color: transparent;
+    position: relative;
+    top: 50px;
+    left: 380px;
+    width: 500px;
+    height: 300px;
+    z-index: 5;
+   
+    /* backdrop-filter: blur(10px); */
+}
+.form-con form input[type="email"]{
+    position: relative;
+    top: 20px;
+    left: 180px;
+    border: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(226, 224, 224);
+}
+.form-con form input[type="password"]{
+    position: relative;
+    top: 20px;
+    left: 180px;
+    border: none;
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgb(226, 224, 224);
+}
+.form-con label:nth-of-type(1){
+    position: relative;
+    top: 10px;
+    left: 180px;
+    color: #000000;
+     font-weight: 500;
+   font-family: "Poppins", sans-serif;
+ 
+
+
+}
+.form-con label:nth-of-type(2){
+    position: relative;
+    top: 10px;
+    left: 180px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.form-con button{
+    position: relative;
+    top: 70px;
+    left: 180px;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    height: 40px;
+    border: none;
+     background-color: rgb(226, 224, 224);
+     border-radius: 5px;
+      font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.form-img {
+    position: relative;
+    background-image: url(../image/alpina-b3-touring-bmw-m3-touring-2022-5k-8k-7680x4881-8104.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 0px;
+    bottom: 600px;
+    width: 520px;
+    height: 800px;
+    z-index: 5;
+}
+.form-total{
+    background-color: rgb(255, 255, 255);
+    width: 850px;
+    height: 500px;
+    position: relative;
+    top: 60px;
+    left: 270px;
+    overflow: hidden;
+    border-radius: 15px;
+    animation: totalanimation 1s ease-in-out;
+}
+@keyframes totalanimation{
+    from{
+        transform: translateX(1200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+.form-total h1{
+    position: relative;
+    top: 40px;
+    left: 630px;
+    color: rgb(0, 0, 0);
+    z-index: 8;
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+    
+}
+/* FORM ENDS */

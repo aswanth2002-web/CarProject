@@ -1,0 +1,114 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(72, 71, 71);
+}
+/*  */
+
+
+/*  */
+.carimage{
+   position: fixed;
+    width: 85%;
+    height: 650px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    
+}
+.carimage img{
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    left: 150px;
+    
+}
+/*  */
+.content-main{
+    width: 70%;
+    height: 850px;
+    background-color: transparent;
+    
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    position: absolute;
+    top: 570px;
+    left: 220px;
+    overflow: hidden;
+    
+   
+}
+.detail-content{
+   
+}
+
+/*  */
+.detail-content .item-desc{
+    background-color: transparent;
+    backdrop-filter: blur(14px);
+    width: 90%;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+     border-radius: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 500;
+    border: solid rgb(189, 188, 188);
+   
+}
+.detail-content .item-desc label{ 
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 500;
+    bottom: 40px;
+   
+}
+.detail-content .item-desc p{ 
+    position: relative;
+    
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    bottom: 30px;
+   
+}
+.detail-content .item {
+    position: relative;
+    top: 56px;
+    left: 50px;
+   
+}
+
+.detail-content .item2{
+    position: relative;
+    left: 540px;
+     bottom: 500px;
+}
+.detail-content .item2 p,
+.detail-content .item p{
+    border: solid rgb(189, 188, 188);
+    width: 40%;
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: white;
+   
+}
+.detail-content .item2 label,
+.detail-content .item label{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 500;
+   
+}

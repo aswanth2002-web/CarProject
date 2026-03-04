@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="{% static 'css/details.css'%}" />
+</head>
+<body>
+   <div class="carimage">
+    <img src="{{data.carimg.url}}" alt="">
+   </div>
+      <div class="content-main">
+        <div class="detail-content">
+                <div class="item-desc">
+                <label for="">car description</label>
+                <p>{{data.cardesc}}</p>
+            </div>
+           <div class="item">
+            <label for="">car name</label>
+            <p>{{data.carname}}</p>
+           </div>
+             <div class="item">
+                <label for="">car price</label>
+                  <p>{{data.carprice}}</p>
+             </div>
+              <div class="item">
+                <label for="">car category</label>
+                <p>{{data.carcate}}</p>
+              </div>
+               <div class="item">
+                 <label for="">car year</label>
+                <p>{{data.caryear}}</p>
+               </div>
+               <div class="item">
+                <label for="">car month</label>
+                <p>{{data.carmonth}}</p>
+               </div>
+                <div class="item">
+                    <label for="">car model</label>
+                   <p>{{data.carmodel}}</p>
+                </div>
+                 <div class="item2">
+                    <label for="">car alternate fuel</label>
+                   <p>{{data.caralter}}</p>
+                 </div>
+                <div class="item2">
+                     <label for="">car color</label>
+                    <p>{{data.carcolor}}</p>
+                </div>
+                 <div class="item2">
+                    <label for="">car fuel</label>
+                   <p>{{data.carfuel}}</p>
+                 </div>
+                  <div class="item2">
+                    <label for="">car version</label>
+                   <p>{{data.carversion}}</p>
+                  </div>
+                <div class="item2">
+                     <label for="">car owner</label>
+                    <p>{{data.carowner}}</p>
+                </div>
+                <div class="item2">
+                    <label for="">car kilometer</label>
+                    <p>{{data.carkilo}}</p>
+                </div>
+        </div>
+     </div>
+
+    
+ 
+   
+</body>
+</html>

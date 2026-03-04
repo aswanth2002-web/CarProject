@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="{% static 'css/first.css'%}" />
+    <link href="https://fonts.cdnfonts.com/css/font" rel="stylesheet">
+                
+</head>
+<body>
+   <div class="main-container">
+     <section id="home">
+        <nav>
+           <div class="profile-image">
+                  <img src="{{db.userimg.url}}" alt="">
+                </div>
+            <div class="logo-nav">
+                <a href="">{{db.username|capfirst}}</a>
+            </div>
+           
+             <details>
+                <summary></summary>
+               <div class="menu">
+                 <a href="#second">Coupe</a>
+              <a href="#third">Sports</a>
+                <a href="#forth">Sedan</a>
+                <a href="#fifth">Wagon</a>
+                 <a href="#sixth">Suv</a>
+               </div>
+             </details>
+             <div class="home-button">
+              <a href="http://127.0.0.1:8000/appcar/first/#home">Home</a>
+              <a href="http://127.0.0.1:8000/appcar/login/">Login</a>
+              <a href="http://127.0.0.1:8000/appcar/regi/">SignIn</a>
+              <a href="http://127.0.0.1:8000/appcar/carregi/">Register</a>
+               <a href="http://127.0.0.1:8000/appcar/wishdisplay/">Wishlist</a>
+             </div>
+        </nav>
+        <div class="viedo-warper">
+           <video class="hero-video" autoplay muted loop playsinline>
+    <source src="{% static 'image\mylivewallpapers-com-Honda-Night-Rain-FHD.mp4' %}" type="video/mp4">
+</video>
+        </div>
+        <div class="home-main">
+            <div class="car-con">
+                <div class="content-car">
+                    <h1>Pages</h1>
+                    <h2>For</h2>
+                    <h3>Cars</h3>
+                <p>A car is a wheeled motor vehicle primarily used for passenger transportation, powered by an internal combustion engine or an electric motor.A car is a wheeled motor vehicle primarily used for passenger transportation, powered by an internal combustion engine or an electric motor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% comment %}  {% endcomment %}
+    <section id="second">
+      <div class="coupe-con">
+        <h1 class="autoshow">COUPE CARS</h1>
+        <p class="autoshow">
+A coupe car is a stylish, two-door vehicle designed with a sleek, sloping roofline that gives it a sporty and premium appearance. Coupes prioritize performance, sharper handling, and bold design over practicality, making them ideal for people who enjoy a dynamic driving experience. They usually offer seating for two to four passengers, with compact rear seats and a more driver-focused cabin.</p>
+        <button class="autoshow"><a href="http://127.0.0.1:8000/appcar/coupe/">see more cars</a></button>
+      </div>
+    </section>
+
+    <section id="third">
+        <div class="sports-con">
+            <h1 class="autoshow">SPORTS CARS</h1>
+             <p class="autoshow">A sports car is a high-performance vehicle built for speed, agility, and an exciting driving experience. It usually features a powerful engine, low-slung body, and sharp handling, allowing it to accelerate quickly and corner with precision. Sports cars often come in 2-door coupe or convertible designs, emphasizing style and aerodynamics. They focus on performance more than practicality, so rear seats (if present) are small and boot space is limited.</p>
+             <button class="autoshow"><a href="http://127.0.0.1:8000/appcar/sports/">see more cars</a></button>
+        </div>
+    </section>
+
+      <section id="forth">
+      <div class="sedan-con">
+        <h1 class="autoshow">SEDAN CARS</h1>
+         <p class="autoshow">A sedan is a comfortable, practical, and spacious car designed with a classic three-box layout—the engine at the front, the cabin in the middle, and a separate enclosed boot at the rear. Sedans usually come with four doors and seating for five passengers, making them ideal for families, daily commuting, and long-distance travel. They offer a smooth ride, good fuel efficiency, and a balanced driving experience. Sedans also tend to have better aerodynamics and a more premium feel compared to hatchbacks or compact cars.</p>
+         <button class="autoshow"><a href="http://127.0.0.1:8000/appcar/sedan/">see more cars</a></button>
+      </div>
+    </section>
+
+      <section id="fifth">
+      <div class="wagon-con">
+        <h1 class="autoshow">WAGON CARS</h1>
+         <p class="autoshow">A wagon (also called an estate car) is a type of vehicle that combines the comfort of a sedan with the cargo space of an SUV. It has a long roofline and an extended rear section, giving it a large, practical boot area that’s easily accessible through a rear hatch door. Wagons are known for their smooth ride, good fuel efficiency, and car-like handling, while still offering more luggage space than most sedans. They are popular in Europe and among families or travellers who need extra room without moving to a big SUV.</p>
+         <button class="autoshow"><a href="http://127.0.0.1:8000/appcar/wagon/">see more cars</a></button>
+      </div>
+    </section>
+
+      <section id="sixth">
+      <div class="suv-con">
+        <h1 class="autoshow">SUVs CARS</h1>
+         <p class="autoshow">An SUV (Sports Utility Vehicle) is a larger, more versatile type of car designed to offer higher ground clearance, powerful performance, and the ability to handle rough roads or off-road conditions. SUVs usually come with a tall body, spacious interiors, and a commanding driving position that gives excellent road visibility. Many SUVs also offer 4×4 or AWD systems for better traction on mud, sand, hills, and uneven terrain, making them suitable for both city and adventure driving. They often provide more seating capacity (5- to 7-seaters), bigger boot space, and better comfort for long trips.</p>
+         <button class="autoshow"><a href="http://127.0.0.1:8000/appcar/suv/">see more cars</a></button>
+      </div>
+    </section>
+
+    {% comment %}  {% endcomment %}
+   </div>
+   <script src="{% static 'js/first.js' %}"></script>
+</body>
+</html>
