@@ -16,7 +16,7 @@ def registerpage(request):
         if(userpass==usercpass):
             data=userregisterpage(username=username,useremail=useremail,userphone=userphone,userimg=userimg,userpass=userpass)
             data.save()
-            return HttpResponse('success')
+            return redirect(loginpage)
         else:
             return HttpResponse('failed')
     return render(request,'register.html')
