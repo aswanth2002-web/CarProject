@@ -383,9 +383,9 @@ details[open]::before {
 
 } 
 .coupe-con h1{
-    position: absolute;
+    position: relative;
     left: 14%;
-    top: 810px;
+    top: 140px;
     font-weight: 700;
     font-size: 70px;
     color: rgb(255, 255, 255);
@@ -396,14 +396,14 @@ details[open]::before {
 .coupe-con p{
     color: white;
     position: relative;
-    top: 240px;
+    top: 140px;
     left: 200px;
     width: 700px;
     font-size: larger;
 }
 .coupe-con button{
     position: relative;
-    top: 250px;
+    top: 140px;
     left: 200px;
     width: 150px;
     height: 35px;
@@ -431,9 +431,9 @@ details[open]::before {
 
 
 .sports-con h1{
-    position: absolute;
+    position: relative;
     left: 14%;
-    top: 1460px;
+    top: 140px;
     font-weight: 700;
     font-size: 70px;
     color: rgb(255, 255, 255);
@@ -442,14 +442,14 @@ details[open]::before {
 .sports-con p{
     color: white;
     position: relative;
-    top: 240px;
+    top: 140px;
     left: 200px;
     width: 700px;
     font-size: larger;
 }
 .sports-con button{
     position: relative;
-    top: 250px;
+    top: 140px;
     left: 200px;
     width: 150px;
     height: 35px;
@@ -474,9 +474,9 @@ details[open]::before {
 }
 
 .sedan-con h1{
-    position: absolute;
+    position: relative;
     left: 14%;
-    top: 2130px;
+    top: 140px;
     font-weight: 700;
     font-size: 70px;
     color: rgb(255, 255, 255);
@@ -485,14 +485,14 @@ details[open]::before {
 .sedan-con p{
     color: white;
     position: relative;
-    top: 240px;
+    top: 140px;
     left: 200px;
     width: 700px;
     font-size: larger;
 }
 .sedan-con button{
     position: relative;
-    top: 250px;
+    top: 140px;
     left: 200px;
     width: 150px;
     height: 35px;
@@ -517,9 +517,9 @@ details[open]::before {
 }
 
 .wagon-con h1{
-     position: absolute;
+     position: relative;
     left: 14%;
-    top: 2800px;
+    top: 140px;
     font-weight: 700;
     font-size: 70px;
     color: rgb(255, 255, 255);
@@ -528,14 +528,14 @@ details[open]::before {
 .wagon-con p{
     color: white;
     position: relative;
-    top: 240px;
+    top: 140px;
     left: 200px;
     width: 700px;
     font-size: larger;
 }
 .wagon-con button{
     position: relative;
-    top: 250px;
+    top: 140px;
     left: 200px;
     width: 150px;
     height: 35px;
@@ -562,7 +562,7 @@ details[open]::before {
 .suv-con h1{
      position: relative;
     left: 14%;
-    top: 200px;
+    top: 140px;
     font-weight: 700;
     font-size: 70px;
     color: rgb(255, 255, 255);
@@ -571,14 +571,14 @@ details[open]::before {
 .suv-con p{
     color: white;
     position: relative;
-    top: 200px;
+    top: 140px;
     left: 200px;
     width: 700px;
     font-size: larger;
 }
 .suv-con button{
     position: relative;
-    top: 200px;
+    top: 140px;
     left: 200px;
     width: 150px;
     height: 35px;

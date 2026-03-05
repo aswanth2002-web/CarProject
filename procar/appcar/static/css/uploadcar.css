@@ -84,6 +84,7 @@ body{
   animation: uploadanimationright 1s;
   border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
+   z-index: 10000;
    
 }
 @keyframes uploadanimationright{
