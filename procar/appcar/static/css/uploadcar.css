@@ -24,7 +24,7 @@ body{
   top: 85px;
   left: 40%;
   bottom: 50px;
-  z-index: 1000;
+  z-index: 100000;
   font-family: "Poppins", sans-serif;
 }
 /*  */
@@ -38,7 +38,7 @@ body{
       background-position: 1% center;
   position: relative;
   top: 60px;
-  left: 240px;
+  left: 260px;
   animation: uploadanimationleft 1s;
   border-top-left-radius: 8px;
    border-bottom-left-radius: 8px;
@@ -80,7 +80,7 @@ body{
     background-position: 90% 20%;
   position: relative;
   bottom: 490px;
-  left: 700px;
+  left: 720px;
   animation: uploadanimationright 1s;
   border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
