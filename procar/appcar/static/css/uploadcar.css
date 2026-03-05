@@ -42,6 +42,7 @@ body{
   animation: uploadanimationleft 1s;
   border-top-left-radius: 8px;
    border-bottom-left-radius: 8px;
+   z-index: 100;
 }
 @keyframes uploadanimationleft{
   from{
@@ -56,6 +57,7 @@ body{
     position: relative;
     left: 50px;
     top: 95px;
+    z-index: 1000;
 
 }
 .box-con .item input{
@@ -64,6 +66,8 @@ body{
     border-radius: 5px;
     padding-top: 5px;
     background-color: rgb(228, 226, 226);
+     z-index: 1000;
+    
 }
 .box-con .item label{
   color: white;
@@ -84,7 +88,8 @@ body{
   animation: uploadanimationright 1s;
   border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
-   z-index: 10000;
+   z-index: 100;
+
    
 }
 @keyframes uploadanimationright{
