@@ -12,11 +12,11 @@
 <body>
     <nav>
           <div class="home-nav">
-            <a href="http://127.0.0.1:8000/appcar/first/">Home</a>
-              <a href="http://127.0.0.1:8000/appcar/login/">Login</a>
-              <a href="http://127.0.0.1:8000/appcar/regi/">SignIn</a>
-              <a href="http://127.0.0.1:8000/appcar/carregi/">Upload cars</a>
-               <a href="http://127.0.0.1:8000/appcar/wishdisplay/">Wishlist</a>
+            <a href="/appcar/first/">Home</a>
+              <a href="/appcar/login/">Login</a>
+              <a href="/appcar/regi/">SignIn</a>
+              <a href="/appcar/carregi/">Upload cars</a>
+               <a href="/appcar/wishdisplay/">Wishlist</a>
              </div>
     </nav>
  <div class="main-container">
@@ -31,7 +31,7 @@
                        <p> {{i.item.carprice}}</p>
                         <p>{{i.item.cardesc}}</p>
                        
-                       <a href="http://127.0.0.1:8000/appcar/wishdelete/{{i.id}}"> <i class="fa-solid fa-trash"></i></a>
+                       <a href="/appcar/wishdelete/{{i.id}}"> <i class="fa-solid fa-trash"></i></a>
                     </div>
                 </div>
             </div>

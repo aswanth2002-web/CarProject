@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -6,13 +7,13 @@ class userregisterpage(models.Model):
     username=models.CharField(max_length=20)
     useremail=models.EmailField(max_length=30)
     userphone=models.IntegerField()
-    userimg=models.ImageField(upload_to='images/')
+    userimg=CloudinaryField('image')
     userpass=models.CharField(max_length=15)
     def __str__(self):
         return self.username
     
 class carregistrationpage(models.Model):
-    carimg=models.ImageField(upload_to='images/')
+    carimg=CloudinaryField('image')
     carname=models.CharField(max_length=35)
     cardesc=models.CharField(max_length=800)
     carprice=models.IntegerField()
